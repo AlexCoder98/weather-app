@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- SEARCH SECTION START -->
+        <header class="search-wrapper">
+
+            <div class="search-container">
+                <h1 class="app-title">Weather App<span class="material-symbols-outlined">
+                        partly_cloudy_day
+                    </span></h1>
+                <div class="search">
+                    <div class="search-input">
+                        <input id="search-for-location" type="text" placeholder="Search for the city...">
+                        <button class="search-btn material-symbols-outlined">Search</button>
+                    </div>
+                    <div class="checkbox-container">
+                        <input id="three-hour-step-forecast" type="checkbox">
+                        <label for="three-hour-step-forecast">3 hour step forecast</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- SEARCH SECTION END -->
+        <!-- RESULTS SECTION START -->
+        <main class="results">
+
+            <!-- <div class="three-hour-step-forecast-container">
+                    <h3 class="location-title"></h3>
+                    <div class="three-hour-step-forecast">
+
+                    </div>
+                </div> -->
+            <div class="current-result-section">
+                <h3 class="no-results-yet">No results yet!</h3>
+                <div class="three-hour-step-forecast-container">
+                    <h3 class="location-title"></h3>
+                    <div class="three-hour-step-forecast">
+
+                    </div>
+                </div>
+                <section class="result">
+                    <div class="main">
+                        <div class="card-header">
+                            <section class="location-container">
+                                <h3 class="city-name-container"><span class="city-name"></span>, <span
+                                        class="country-symbol"></span></h3>
+                            </section>
+                            <section class="weather-general-info">
+                                <p class="weather-description"></p>
+                                <div class="img-wrapper">
+                                    <img class="icon" alt="Weather icon">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="temp"></h3>
+                        </div>
+                        <div class="card-footer">
+                            <p class="temp-range-container">
+                                Min: <span class="from"></span>, Max: <span class="to"></span>, Feels like: <span
+                                    class="feels-like"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="more-weather-details">
+
+                    </div>
+                    <button class="more-details">More details <span class="material-symbols-outlined">
+                            expand_more
+                        </span></button>
+                </section>
+            </div>
+            <hr>
+            <section class="history-list">
+                <div class="history-header">
+                    <h3 class="title">History</h3>
+                    <button class="clear-history">Clear history list</button>
+                </div>
+                <h3 class="empty-history">History list is empty!</h3>
+                <div class="results-container">
+
+                </div>
+            </section>
+        </main>
+        <!-- RESULTS SECTION END -->
+    </div>
+
+
+    <!-- POP-UP START -->
+    <div class="pop-up">
+        <section class="pop-up-body">
+            <h2 class="pop-up-title">Welcome to Weather App</h2>
+            <div class="select-country-container">
+                <label for="select-country">Choose your language</label>
+                <select name="Choose your language" id="select-country">
+                    <option value="" disable selected>language</option>
+                </select>
+            </div>
+            <button class="btn-continue">Continue</button>
+        </section>
+    </div>
+    <!-- POP-UP END -->
+    <div class="bg-img-wrapper"><img src="./src/images/mountains.jpg" alt="Mountains"></div>
+
+
+    <script type="module" src="./dist/app.js"></script>
+</body>
+
+</html>
